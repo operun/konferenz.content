@@ -1,0 +1,63 @@
+/* Stylesheet for the 'Custom Theme' Plone theme */
+
+
+#talk_details .speaker { 
+    font-size: 130%;
+}
+
+#talk_details .company {
+    font-size:90%; 
+}
+
+#talk_details .documentDescription {
+    margin-top:10px;
+}
+
+#talk_details .talkImageContainer {
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+#talk_details .speaker_social {
+   background:#00679B; 
+}
+
+body.portaltype-talk #talk_details #category {
+    display:block;
+    background:#00679B; 
+    text-align:left;
+}
+
+body.portaltype-talk #talk_details #category span a {
+    color:#00679B !important; 
+    background: none repeat scroll 0 0 #DDDDDD;
+}
+
+body.portaltype-talk #talk_details #category span a:hover {
+    color:#00679B !important; 
+}
+
+#talk_details .row {
+    display:none;
+}
+
+body.portaltype-talk #category {
+    display:none;
+}
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

@@ -1,0 +1,120 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="konferenz.content">
+<body>
+
+<div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+          tal:define="kssClassesView context/@@kss_field_decorator_view;
+                      getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                      templateId template/getId;
+                      text python:here.CookedBody(stx_level=2);
+                      len_text python:len(text.strip())">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading"> 
+            <metal:field use-macro="python:here.widget('title', mode='view')">
+            Title
+            </metal:field>
+        </h1>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+        
+        <div id="talk_details">
+
+            <div class="speaker_details">
+                 <span class="speaker" tal:content="here/getName|nothing">Speaker Name</span> - <a class="company" tal:content="here/getCompany|nothing" tal:attributes="href here/getWebsite|nothing">Company</a>
+            </div>
+
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+
+            <div class="speaker_img_desc clearfix">
+                <div class="talkImageContainer" tal:condition="here/image_mini|nothing">
+                    <img tal:replace="structure python: here.tag(scale='mini', css_class='speakerImage')" src="" alt="" />
+                </div>
+                <p class="documentDescription">
+                    <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
+                    </metal:field>
+                </p>
+       
+        </div>
+
+        <div metal:define-macro="text-field-view"
+             id="parent-fieldname-text" class="stx"
+             tal:define="kss_class python:getKssClasses('text',
+                         templateId=templateId, macro='text-field-view');
+                         text text|here/getText|nothing"
+             tal:condition="text"
+             tal:attributes="class python: here.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
+            <div metal:define-slot="inside" tal:replace="structure text">The body</div>
+        </div>
+
+        <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
+
+        <h2>Der Referent/-in</h2>
+
+        <div metal:define-macro="speaker_info-field-view"
+             id="parent-fieldname-text" class="stx"
+             tal:define="kss_class python:getKssClasses('text',
+                         templateId=templateId, macro='speaker_info-field-view');
+                         text text|here/getSpeaker_info|nothing"
+             tal:condition="here/getSpeaker_info"
+             tal:attributes="class python: here.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
+            <div metal:define-slot="inside" tal:replace="structure here/getSpeaker_info">The body</div>
+        </div>
+ 
+        <div class="speaker_social clearfix">
+            <div class='twitter'
+                 tal:condition="here/getTwitter">
+
+                <span>Twitter: </span>
+                <a href=""
+                   tal:attributes="href python: 'http://twitter.com/' + here.getTwitter()"
+                   tal:content="python: '@' + here.getTwitter()">
+                   Twitter Name
+                </a>
+            </div>
+            <div class='xing'
+                 tal:condition="here/getXing">
+
+                <span>Xing: </span>
+                <a href=""
+                   tal:attributes="href here/getXing"
+                   tal:content="here/getName">
+                   Xing Name
+                </a>
+            </div>
+            <div class='website'
+                 tal:condition="here/getWebsite">
+
+                <span>Web: </span>
+                <a href=""
+                   tal:attributes="href here/getWebsite"
+                   tal:content="here/getWebsite">
+                   Website Name
+                </a>
+            </div>
+
+        </div> 
+ 
+    </div>
+ 
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+     
+    <div metal:use-macro="here/document_relateditems/macros/relatedItems">
+        Show related items if they exist
+    </div>
+        
+
+    </tal:main-macro>
+</div>
+
+</body>
+</html>
+

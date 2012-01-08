@@ -1,0 +1,2 @@
+recursive-include konferenz *
+global-exclude *pyc

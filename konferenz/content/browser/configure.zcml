@@ -1,0 +1,36 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="konferenz.content">
+<!--  
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Custom Theme"
+      />
+--> 
+  <browser:page
+      for="..interfaces.ITalk"
+      name="view"
+      class=".views.TalkView"
+      permission="zope2.View"
+      />
+ 
+  <browser:page
+      for="..interfaces.ITalkFolder"
+      name="view"
+      class=".views.TalkFolderView"
+      permission="zope2.View"
+      />
+ 
+ <browser:resourceDirectory
+      name="konferenz.content.images"
+      directory="images"
+      />
+
+  <browser:resourceDirectory
+      name="konferenz.content.stylesheets"
+      directory="stylesheets"
+      />
+
+</configure>

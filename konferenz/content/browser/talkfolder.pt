@@ -1,0 +1,182 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="konferenz.content">
+<body>
+
+<div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+          tal:define="kssClassesView context/@@kss_field_decorator_view;
+                      getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                      templateId template/getId">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading"> 
+            <metal:field use-macro="python:here.widget('title', mode='view')">
+            Title
+            </metal:field>
+        </h1>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+        
+        <p class="documentDescription">
+            <metal:field use-macro="python:here.widget('description', mode='view')">
+            Description
+            </metal:field>
+        </p>
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+
+        <h1>Mittwoch 22.2.2012</h1>
+
+        <table class="scheduleTable">
+                <tbody><tr >
+                    <td width="90"></td>
+                    <td>Slot Eins<br>Raum 103</td>
+                    <td>Slot Zwei<br>Raum 104</td>
+                    <td>Hochschultagung<br>Raum 105</td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>09:30 - 10:00</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                </tr>
+                <tr >
+                    <td>10:00 - 11:00</td>
+                    <td>Kathrin Katzmaier (Zettwerk Software Engineering GmbH)<br><a href="kommunizieren-informieren-akquirieren-plone-als-kommunikationsmittel-im-online-marketing/">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
+                    <td>Stefania Trabucchi (Freelancerin)<br><a href="">Mobile Kontexte und Responsive Webdesign</a></td>
+                    <td>Andreas Jung (ZOPYX Ltd.)<br><a href="">Von Plone zum EBook oder PDF - Dokumentieren und Publizieren aus Plone und mit Plone</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>11:15 - 12:15</td>
+                    <td>Hendrik Bunke (ZBW - Leibniz Informationszentrum Wirtschaft)<br><a href="">Interaction Design für ökologisches Verhalten</a></td>
+                    <td>Bernhard Bühlmann (4teamwork GmbH)<br><a href="">Plone - die clevere Alternative zu Sharepoint</a></td>
+                    <td>Massimo Azzolini (RedTurtle Technology)<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
+                </tr>
+                <tr >
+                    <td>14:45 - 15:45</td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Web-Mashups mit Diazo: Django und Plone unter einem Dach</a></td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
+                    <td>Daniel Kraft (D9T GmbH)<br><a href="">User-Interfaces in JavaScript</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>16:00 - 17:00</td>
+                    <td>Daniel Nouri (Adobe Systems)<br><a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
+                    <td>Alan Runyan(Enfold Systems)<br><a href="">Plone Deployment Architecture</a></td>
+                    <td>Armin C. Stroß-Radschinski (Freelancer)<br><a href="">Content Lifecycle Management – Digitale Inhalte langfristig verwalten</a></td>
+                </tr>
+                <tr >
+                    <td>17:00 - 18:00</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                </tr>
+            </tbody></table>
+ 
+        <h1>Donnerstag 23.2.2012</h1>
+
+        <table class="scheduleTable">
+                <tbody><tr >
+                    <td width="90"></td>
+                    <td>Slot Eins<br>Raum 103</td>
+                    <td>Slot Zwei<br>Raum 104</td>
+                    <td>Hochschultagung<br>Raum 105</td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>09:30 - 10:00</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                </tr>
+                <tr >
+                    <td>10:00 - 11:00</td>
+                    <td>Kathrin Katzmaier (Zettwerk Software Engineering GmbH)<br><a href="kommunizieren-informieren-akquirieren-plone-als-kommunikationsmittel-im-online-marketing/">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
+                    <td>Stefania Trabucchi (Freelancerin)<br><a href="">Mobile Kontexte und Responsive Webdesign</a></td>
+                    <td>Andreas Jung (ZOPYX Ltd.)<br><a href="">Von Plone zum EBook oder PDF - Dokumentieren und Publizieren aus Plone und mit Plone</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>11:15 - 12:15</td>
+                    <td>Hendrik Bunke (ZBW - Leibniz Informationszentrum Wirtschaft)<br><a href="">Interaction Design für ökologisches Verhalten</a></td>
+                    <td>Bernhard Bühlmann (4teamwork GmbH)<br><a href="">Plone - die clevere Alternative zu Sharepoint</a></td>
+                    <td>Massimo Azzolini (RedTurtle Technology)<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
+                </tr>
+                <tr >
+                    <td>14:45 - 15:45</td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Web-Mashups mit Diazo: Django und Plone unter einem Dach</a></td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
+                    <td>Daniel Kraft (D9T GmbH)<br><a href="">User-Interfaces in JavaScript</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>16:00 - 17:00</td>
+                    <td>Daniel Nouri (Adobe Systems)<br><a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
+                    <td>Alan Runyan(Enfold Systems)<br><a href="">Plone Deployment Architecture</a></td>
+                    <td>Armin C. Stroß-Radschinski (Freelancer)<br><a href="">Content Lifecycle Management – Digitale Inhalte langfristig verwalten</a></td>
+                </tr>
+                <tr >
+                    <td>17:00 - 18:00</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                </tr>
+            </tbody></table>
+ 
+        <h1>Freitag 24.2.2012</h1>
+
+        <table class="scheduleTable">
+                <tbody><tr >
+                    <td width="90"></td>
+                    <td>Slot Eins<br>Raum 103</td>
+                    <td>Slot Zwei<br>Raum 104</td>
+                    <td>Hochschultagung<br>Raum 105</td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>09:30 - 10:00</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                    <td>Willkommen</td>
+                </tr>
+                <tr >
+                    <td>10:00 - 11:00</td>
+                    <td>Kathrin Katzmaier (Zettwerk Software Engineering GmbH)<br><a href="kommunizieren-informieren-akquirieren-plone-als-kommunikationsmittel-im-online-marketing/">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
+                    <td>Stefania Trabucchi (Freelancerin)<br><a href="">Mobile Kontexte und Responsive Webdesign</a></td>
+                    <td>Andreas Jung (ZOPYX Ltd.)<br><a href="">Von Plone zum EBook oder PDF - Dokumentieren und Publizieren aus Plone und mit Plone</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>11:15 - 12:15</td>
+                    <td>Hendrik Bunke (ZBW - Leibniz Informationszentrum Wirtschaft)<br><a href="">Interaction Design für ökologisches Verhalten</a></td>
+                    <td>Bernhard Bühlmann (4teamwork GmbH)<br><a href="">Plone - die clevere Alternative zu Sharepoint</a></td>
+                    <td>Massimo Azzolini (RedTurtle Technology)<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
+                </tr>
+                <tr >
+                    <td>14:45 - 15:45</td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Web-Mashups mit Diazo: Django und Plone unter einem Dach</a></td>
+                    <td>Johannes Raggam (BlueDynamics Alliance)<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
+                    <td>Daniel Kraft (D9T GmbH)<br><a href="">User-Interfaces in JavaScript</a></td>
+                </tr>
+                <tr bgcolor="#00679B">
+                    <td>16:00 - 17:00</td>
+                    <td>Daniel Nouri (Adobe Systems)<br><a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
+                    <td>Alan Runyan(Enfold Systems)<br><a href="">Plone Deployment Architecture</a></td>
+                    <td>Armin C. Stroß-Radschinski (Freelancer)<br><a href="">Content Lifecycle Management – Digitale Inhalte langfristig verwalten</a></td>
+                </tr>
+                <tr >
+                    <td>17:00 - 18:00</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                    <td>Podiumsdiskussion<br>Party!</td>
+                </tr>
+            </tbody></table>
+ 
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</div>
+
+</body>
+</html>
+
