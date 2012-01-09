@@ -1,6 +1,19 @@
 /* Stylesheet for the 'Custom Theme' Plone theme */
 
 
+.scheduleTable .header {
+    font-size:110%;
+    font-weight:bold;
+}
+
+.scheduleTable td {
+    vertical-align: top;
+}
+
+.scheduleTable td a {
+    cursor:default;
+}
+
 #talk_details .speaker { 
     font-size: 130%;
 }
