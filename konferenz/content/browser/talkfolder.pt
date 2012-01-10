@@ -34,7 +34,7 @@
         <h1>Mittwoch 22.2.2012</h1>
 
         <table class="scheduleTable">
-                <tbody>
+            <tbody>
                 <tr class="header" >
                     <td width="90"></td>
                     <td>Slot Eins</td>
@@ -51,7 +51,8 @@
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>09:45</td>
-                    <td colspan="3">Keynote Elizabeth Leddy</td>
+                    <td colspan="3">Keynote von Elizabeth Leddy<br>
+                     <a href="#">Old Dogs and New Tricks</a></td>
                 </tr>
                  <tr>
                     <td>10:30</td>
@@ -60,15 +61,17 @@
                 <tr bgcolor="#00679B">
                     <td>11:00</td>
                     <td>Jan Ulrich Hasecke (hasecke.com - Business Communication)<br><a href="">Plone - Eine Einführung</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Harald Frießnegger (Webmeisterei GmbH)<br><a href="">Buildout - Alles im Griff!</a></td>
-                </tr>
+                    <td>Harald Frießnegger (Webmeisterei GmbH)<br>
+                      <a href="">Buildout - Alles im Griff!</a></td>
+                    <td>Hochschultagung<br></td>
+                  </tr>
                 <tr >
                     <td>11:45</td>
                     <td>Andreas Kaiser (Xo7 GmbH)<br><a href="">Szenarien für den Einsatz von Plone im Bildungssektor</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Wolfgang Thomas (Syslab.com GmbH)<br><a href="">Mehrsprachige Sites erstellen und verwalten - Tipps aus der Praxis</a></td>
-                </tr>
+                    <td>Wolfgang Thomas (Syslab.com GmbH)<br>
+                      <a href="">Mehrsprachige Sites erstellen und verwalten - Tipps aus der Praxis</a></td>
+                    <td>Hochschultagung<br></td>
+                  </tr>
                 <tr bgcolor="#00679B">
                     <td>12:30</td>
                     <td colspan="3">Mittagspause</td>
@@ -76,15 +79,17 @@
                 <tr>
                     <td>13:30</td>
                     <td>Stefania Trabucchi (Freelancerin)<br><a href="">Mobile Kontexte und Responsive Webdesign</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Tom Lazar (pyfidelity)<br><a href="">WSGI -> Pyramid -> Plone</a></td>
-                </tr>
+                    <td>Tom Lazar (pyfidelity)<br>
+                      <a href="">WSGI -> Pyramid -> Plone</a></td>
+                    <td>Hochschultagung<br></td>
+                  </tr>
                 <tr bgcolor="#00679B">
                     <td>14:15</td>
                     <td>Maik Derstappen (Inqbus GmbH & Co. KG)<br><a href="">Plone Theming, flexibel, schnell und einfach!</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Daniel Nouri (Freelancer)<br><a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
-                </tr>
+                    <td>Daniel Nouri (Freelancer)<br>
+                      <a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
+                  <td>Hochschultagung<br></td>
+                  </tr>
                 <tr >
                     <td>15:00</td>
                     <td colspan="3">Kaffeepause</td>
@@ -93,13 +98,13 @@
                     <td>15:30</td>
                     <td>Massimo Azzolini (RedTurtle Technology)<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
                     <td>Roman Jansen-Winkeln (Satzweiss.com Print, Web, Software GmbH)<br><a href="">Datendrehscheibe und Download-Plattform: E-Book-Management mit Plone</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
                     <td>16:15</td>
                     <td>Pavel Bogdanovic (Prontonet)<br><a href="">Plone als CRM-Werkzeug: Plone-Salesforce Integration</a></td>
                     <td>Alan Runyan (Enfold Systems)<br><a href="">Plone Deployment Architecture</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>15:00</td>
@@ -111,7 +116,7 @@
 
         <table class="scheduleTable">
                 <tbody>
-				<tr class="header">
+                <tr class="header">
                     <td width="90"></td>
                     <td>Slot Eins</td>
                     <td>Slot Zwei</td>
@@ -120,14 +125,16 @@
                 <tr bgcolor="#00679B">
                     <td>09:00</td>
                     <td>Bernhard Bühlmann (4teamwork GmbH)<br><a href="">Plone - die clevere Alternative zu Sharepoint</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Hendrik Bunke (ZBW - Leibniz Informationszentrum Wirtschaft)<br><a href="">Semantische Annotationen mit Plone</a></td>
+                    <td>Hendrik Bunke (ZBW - Leibniz Informationszentrum Wirtschaft)<br>
+                      <a href="">Semantische Annotationen mit Plone</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
                     <td>9:45</td>
                     <td>Robert Rottermann (redCOR AG)<br><a href="">Web-Mashups mit Diazo: Django und Plone unter einem Dach</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Philipp Auersperg (Bluedynamics Alliance)<br><a href="">AGX - Code Generation mit UML2</a></td>
+                    <td>Philipp Auersperg (Bluedynamics Alliance)<br>
+                      <a href="">AGX - Code Generation mit UML2</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>10:30</td>
@@ -136,14 +143,16 @@
                 <tr>
                     <td>11:00</td>
                     <td>Christian Schneider (Universität Koblenz-Landau)<br><a href="">Use Case: Plone im Einsatz an der Universität Koblenz-Landau</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Jens W. Klein (Klein & Partner KG)<br><a href="">Ausfallsichere Kultur mit Plone - Effektives redundantes Hosting mit OpenSource Boardmitteln</a></td>
+                    <td>Jens W. Klein (Klein & Partner KG)<br>
+                      <a href="">Ausfallsichere Kultur mit Plone - Effektives redundantes Hosting mit OpenSource Boardmitteln</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>11:45</td>
                     <td>Kathrin Katzmaier (Zettwerk Software Engineering GmbH)<br><a href="">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
-                    <td>Hochschultagung<br><a href="">TBA</a></td>
-                    <td>Andreas Schiweck (Freelancer)<br><a href="">Von Typo3 zu Plone - ein Migrationsbericht</a></td>
+                    <td>Andreas Schiweck (Freelancer)<br>
+                      <a href="">Von Typo3 zu Plone - ein Migrationsbericht</a></td>
+                    <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
                     <td>12:30</td>
@@ -155,9 +164,10 @@
                 </tr>
                 <tr >
                     <td>14:15</td>
-                    <td>Matt Hamilton (Netsight)<br><a href="">Carglassintranet.de: A Case Study</a></td>
+                    <td>Matt Hamilton (Netsight)<br>
+                      <a href="">Carglassintranet.de: A Case Study</a></td>
                     <td>Andreas Jung (ZOPYX Ltd.)<br><a href="">Von Plone zum EBook oder PDF - Dokumentieren und Publizieren aus Plone und mit Plone</a></td>
-                    <td> </td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>15:00</td>
@@ -184,8 +194,8 @@
         <h1>Freitag 24.2.2012</h1>
 
         <table class="scheduleTable">
-                <tbody>
-				<tr class="header">
+            <tbody>
+                <tr class="header">
                     <td width="90"></td>
                     <td>Slot Eins</td>
                     <td>Slot Zwei</td>
@@ -206,11 +216,13 @@
                 </tr>
                 <tr >
                     <td>11:00</td>
-                    <td colspan="2">Keynote - Timo Stollenwerk & Sebastian Böttger</td>
+                    <td colspan="2"> Timo Stollenwerk & Sebastian Böttger<br>
+                    <a href="">TYPO3 vs. Plone - Der Shootout</a></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>11:45</td>
-                    <td colspan="2">Keynote - Prof. Udo Helmbrecht</td>
+                    <td colspan="2">Keynote von Prof. Udo Helmbrecht<br>
+                      <a href="">TBA</a></td>
                 </tr>
                 <tr >
                     <td>12:30</td>
@@ -234,8 +246,9 @@
                     <td>Open Space</td>
                     <td>Open Space</td>
                 </tr>
-            </tbody></table>
- 
+            </tbody>
+        </table>
+
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
     </tal:main-macro>
