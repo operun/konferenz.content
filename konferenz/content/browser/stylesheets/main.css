@@ -6,12 +6,19 @@
     font-weight:bold;
 }
 
+.scheduleTable tr {
+}
+
 .scheduleTable td {
     vertical-align: top;
+    padding: 0.5em;
+    min-height: 3em;
 }
 
 .scheduleTable td a {
     cursor:default;
+    font-size: 120%;
+    font-weight: bold;
 }
 
 #talk_details .speaker { 
