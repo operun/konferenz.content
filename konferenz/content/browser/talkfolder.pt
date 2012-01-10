@@ -29,6 +29,8 @@
             </metal:field>
         </p>
 
+        <p class="documentDescription">Details zu den Vorträgen finden sich momentan nur in der <a href="http://konferenz.plone.de/veranstaltung/vortraege">Liste der Vorträge</a></p>
+
         <div tal:replace="structure provider:plone.abovecontentbody" />
 
         <h1>Mittwoch 22.2.2012</h1>
