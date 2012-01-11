@@ -109,7 +109,7 @@
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
-                    <td>15:00</td>
+                    <td>17:00</td>
                     <td colspan="3">Lightning Talks</td>
                 </tr>
             </tbody></table>
@@ -177,16 +177,16 @@
                 </tr>
                 <tr >
                     <td>15:30</td>
-                    <td colspan="3">Lightning Talks</td>
+                    <td colspan="3">Lightning Talks und Präsentation der Open Spaces</td>
                 </tr>
                 <tr bgcolor="#00679B">
-                    <td>15:45</td>
+                    <td>16:00</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
                 </tr>
                 <tr >
-                    <td>16:30</td>
+                    <td>16:45</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
@@ -222,29 +222,25 @@
                     <a href="">TYPO3 vs. Plone - Der Shootout</a></td>
                 </tr>
                 <tr bgcolor="#00679B">
-                    <td>11:45</td>
+                    <td>12:15</td>
                     <td colspan="2">Keynote von Prof. Udo Helmbrecht<br>
                       <a href="">TBA</a></td>
                 </tr>
-                <tr >
-                    <td>12:30</td>
-                    <td colspan="2">Abschlussworte</td>
+                <tr>
+                    <td>13:15</td>
+                    <td colspan="2">Lightning Talks und Präsentation der Open Spaces</td>
                 </tr>
                 <tr bgcolor="#00679B">
-                    <td>12:45</td>
-                    <td colspan="2">Lightning Talks</td>
-                </tr>
-                <tr >
-                    <td>12:45</td>
+                    <td>13:45</td>
                     <td colspan="2">Mittagspause</td>
                 </tr>
-                <tr bgcolor="#00679B">
-                    <td>14:00</td>
+                <tr>
+                    <td>14:30</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
                 </tr>
-                <tr >
-                    <td>15:00</td>
+                <tr bgcolor="#00679B">
+                    <td>15:30</td>
                     <td>Open Space</td>
                     <td>Open Space</td>
                 </tr>
