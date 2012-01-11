@@ -87,9 +87,8 @@
                   </tr>
                 <tr bgcolor="#00679B">
                     <td>14:15</td>
-                    <td>Maik Derstappen<br><a href="">Plone Theming, flexibel, schnell und einfach!</a></td>
-                    <td>Daniel Nouri<br>
-                      <a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
+                    <td>Roman Jansen-Winkeln<br><a href="">Datendrehscheibe und Download-Plattform: E-Book-Management mit Plone</a></td>
+                    <td>Daniel Nouri<br><a href="">Kotti: Eine moderne und schlanke Plone-Alternative auf Basis von Pyramid und SQLAlchemy</a></td>
                   <td>Hochschultagung<br></td>
                   </tr>
                 <tr >
@@ -99,7 +98,7 @@
                 <tr bgcolor="#00679B">
                     <td>15:30</td>
                     <td>Massimo Azzolini<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
-                    <td>Roman Jansen-Winkeln<br><a href="">Datendrehscheibe und Download-Plattform: E-Book-Management mit Plone</a></td>
+                    <td>Johannes Raggam<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
@@ -204,13 +203,13 @@
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>09:00</td>
-                    <td>Armin C. Stroß-Radschinski<br><a href="">Content Lifecycle Management – Digitale Inhalte langfristig verwalten</a></td>
                     <td>Daniel Kraft<br><a href="">User-Interfaces in JavaScript</a></td>
+                    <td>Armin C. Stroß-Radschinski<br><a href="">Content Lifecycle Management – Digitale Inhalte langfristig verwalten</a></td>
                 </tr>
                 <tr >
                     <td>9:45</td>
+                    <td>Maik Derstappen<br><a href="">Plone Theming, flexibel, schnell und einfach!</a></td>
                     <td>Andrew Mleczko<br><a href="">Building the project management software of your dreams</a></td>
-                    <td>Johannes Raggam<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>10:30</td>

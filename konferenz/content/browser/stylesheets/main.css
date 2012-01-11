@@ -11,13 +11,13 @@
 
 .scheduleTable td {
     vertical-align: top;
-    padding: 0.5em;
+    padding: 0.6em;
     min-height: 3em;
 }
 
 .scheduleTable td a {
     cursor:default;
-    font-size: 120%;
+    font-size: 130%;
     font-weight: bold;
 }
 
