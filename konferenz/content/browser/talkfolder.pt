@@ -53,8 +53,7 @@
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>09:45</td>
-                    <td colspan="3">Keynote von Elizabeth Leddy<br>
-                     <a href="#">Old Dogs and New Tricks</a></td>
+                    <td colspan="3">Keynote von Elizabeth Leddy<br><a href="#">Old Dogs and New Tricks</a></td>
                 </tr>
                  <tr>
                     <td>10:30</td>
@@ -63,15 +62,13 @@
                 <tr bgcolor="#00679B">
                     <td>11:00</td>
                     <td>Jan Ulrich Hasecke<br><a href="">Plone - Eine Einführung</a></td>
-                    <td>Harald Frießnegger<br>
-                      <a href="">Buildout - Alles im Griff!</a></td>
+                    <td>Harald Frießnegger<br><a href="">Buildout - Alles im Griff!</a></td>
                     <td>Hochschultagung<br></td>
                   </tr>
                 <tr >
                     <td>11:45</td>
                     <td>Andreas Kaiser<br><a href="">Szenarien für den Einsatz von Plone im Bildungssektor</a></td>
-                    <td>Wolfgang Thomas<br>
-                      <a href="">Mehrsprachige Sites erstellen und verwalten - Tipps aus der Praxis</a></td>
+                    <td>Wolfgang Thomas<br><a href="">Mehrsprachige Sites erstellen und verwalten - Tipps aus der Praxis</a></td>
                     <td>Hochschultagung<br></td>
                   </tr>
                 <tr bgcolor="#00679B">
@@ -81,8 +78,7 @@
                 <tr>
                     <td>13:30</td>
                     <td>Stefania Trabucchi<br><a href="">Mobile Kontexte und Responsive Webdesign</a></td>
-                    <td>Tom Lazar<br>
-                      <a href="">WSGI, Pyramid und Plone</a></td>
+                    <td>Tom Lazar<br><a href="">WSGI, Pyramid und Plone</a></td>
                     <td>Hochschultagung<br></td>
                   </tr>
                 <tr bgcolor="#00679B">
@@ -97,7 +93,7 @@
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>15:30</td>
-                    <td>Massimo Azzolini<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
+                    <td>Kathrin Katzmaier<br><a href="">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
                     <td>Johannes Raggam<br><a href="">Save The Dates: Das Kalenderframework plone.app.event</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
@@ -126,15 +122,13 @@
                 <tr bgcolor="#00679B">
                     <td>09:00</td>
                     <td>Bernhard Bühlmann<br><a href="">Plone - die clevere Alternative zu Sharepoint</a></td>
-                    <td>Hendrik Bunke<br>
-                      <a href="">Semantische Annotationen mit Plone</a></td>
+                    <td>Hendrik Bunke<br><a href="">Semantische Annotationen mit Plone</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
                     <td>9:45</td>
-                    <td>Robert Rottermann<br><a href="">Web-Mashups mit Diazo: Django und Plone unter einem Dach</a></td>
-                    <td>Philipp Auersperg<br>
-                      <a href="">AGX - Code Generation mit UML2</a></td>
+                    <td>Robert Rottermann<br><a href="">Web-Mashups mit Plone und Diazo</a></td>
+                    <td>Philipp Auersperg<br><a href="">AGX - Code Generation mit UML2</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
@@ -144,15 +138,13 @@
                 <tr>
                     <td>11:00</td>
                     <td>Christian Schneider<br><a href="">Use Case: Plone im Einsatz an der Universität Koblenz-Landau</a></td>
-                    <td>Jens W. Klein<br>
-                      <a href="">Ausfallsichere Kultur mit Plone - Effektives redundantes Hosting mit OpenSource Boardmitteln</a></td>
+                    <td>Jens W. Klein<br><a href="">Ausfallsichere Kultur mit Plone - Effektives redundantes Hosting mit OpenSource Boardmitteln</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>11:45</td>
-                    <td>Kathrin Katzmaier<br><a href="">Kommunizieren, informieren, akquirieren - Plone als Kommunikationsmittel im Online Marketing</a></td>
-                    <td>Andreas Schiweck<br>
-                      <a href="">Von Typo3 zu Plone - ein Migrationsbericht</a></td>
+                    <td>Massimo Azzolini<br><a href="">Scalable Plone: from town-wise sites to region-wise portals and Intranets</a></td>
+                    <td>Andreas Schiweck<br><a href="">Von Typo3 zu Plone - ein Migrationsbericht</a></td>
                     <td>Hochschultagung<br></td>
                 </tr>
                 <tr >
@@ -165,8 +157,7 @@
                 </tr>
                 <tr >
                     <td>14:15</td>
-                    <td>Matt Hamilton<br>
-                      <a href="">Carglassintranet.de: A Case Study</a></td>
+                    <td>Matt Hamilton<br><a href="">Carglassintranet.de: A Case Study</a></td>
                     <td>Andreas Jung<br><a href="">Von Plone zum EBook oder PDF - Dokumentieren und Publizieren aus Plone und mit Plone</a></td>
                     <td></td>
                 </tr>
@@ -217,13 +208,12 @@
                 </tr>
                 <tr >
                     <td>11:00</td>
-                    <td colspan="2"> Timo Stollenwerk & Sebastian Böttger<br>
-                    <a href="">TYPO3 vs. Plone - Der Shootout</a></td>
+                    <td colspan="2"> Timo Stollenwerk & Sebastian Böttger<br><a href="">TYPO3 vs. Plone - Der Shootout</a></td>
                 </tr>
                 <tr bgcolor="#00679B">
                     <td>12:15</td>
                     <td colspan="2">Keynote von Prof. Udo Helmbrecht<br>
-                      <a href="">TBA</a></td>
+                      <a href=""></a></td>
                 </tr>
                 <tr>
                     <td>13:15</td>
