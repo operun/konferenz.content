@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="konferenz.content">
+
+<body>
+
+<div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading" i18n:translate="talks">Talks</h1>
+        
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+        
+        <metal:block define-macro="listing" extend-macro="context/folder_listing/macros/content-core">
+            <metal:entries fill-slot="entries">
+            	
+            	<div id="talk-list">
+            	
+            	<input class="search" placeholder="Search Talks" i18n:attributes="placeholder" />
+            	
+            	<ul class="sort-by">
+            		<li class="sort btn" data-sort="tileHeadline" i18n:translate="sort_by_title">Sort by Title</li>
+            	</ul>
+            	
+            	<ul class="filter">
+            		<li class="btn" id="filter-none" i18n:translate="show_all">Show all</li>
+            		<li class="btn" id="filter-keynotes" i18n:translate="show_keynotes">Show Keynotes</li>
+            	</ul>
+            	
+            	<div class="visualClear"><!-- --></div>
+            	
+            	<ul class="list" tal:define="talks view/talks">
+            	
+	                <tal:loop tal:repeat="talk talks">
+	                <li class="talklist-item" tal:define="item_object talk/getObject;">
+	                
+	                    <a href="#" tal:condition="exists:item_object/image_thumb" tal:attributes="href item_object/absolute_url">
+	                        <img src="" alt="" tal:replace="structure python: path('nocall:item_object/tag')(scale='tile', css_class='talkImage')" />
+	                    </a>
+	                    
+	                    <h2 class="tileHeadline">
+	                        <a href="#" class="summary url" tal:attributes="href item_object/absolute_url" tal:content="talk/Title">
+	                            Item Title
+	                        </a>
+	                    </h2>
+	                    
+	                    <p class="tileBody" tal:condition="talk/Description">
+	                        <span class="description" tal:content="talk/Description">
+	                            description
+	                        </span>
+	                    </p>
+	                    
+	                    <p class="tileBody" tal:condition="not: talk/Description" i18n:translate="no_talk_description">
+	                        There is no Description available.
+	                    </p>
+	                    
+	                    <div class="tileText">
+	                    	<metal:field use-macro="python:item_object.widget('text', mode='view')">
+	                    		Title
+	                    	</metal:field>
+	                    </div>
+	                    
+	                    <p class="category" tal:condition="item_object/getKeynote">Keynote</p>
+	                    <p class="category" tal:condition="not: item_object/getKeynote">Talk</p>
+	                    
+	                    <div class="expandLink">
+	                    	<a href=""><img src="arrowDown.gif" alt="Expand" title="Show full description" i18n:attributes="title"/></a>
+	                    </div>
+	                    
+	                    <div class="visualClear"><!-- --></div>
+	                    
+		            </li>
+		            </tal:loop>
+                                
+                </ul>
+                
+                </div>
+
+			    <script type="text/javascript">
+			    
+			        var options = {
+			        	valueNames: [ 'tileHeadline', 'tileBody', 'category']
+			        };
+			        
+			        var featureList = new List('talk-list', options);
+			        
+			        jq('#filter-keynotes').click(function() {
+			        	featureList.filter(function(values) {
+			        		if (values.category == "Keynote") {
+			        			return true;
+			        		} else {
+			        			return false;
+			        		}
+			        	});
+			        	return false;
+			        });
+			        
+			        jq('#filter-none').click(function() {
+			        	featureList.filter();
+			        	return false;
+			        });
+			        
+			    </script>
+                
+            </metal:entries>
+        </metal:block>
+        
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+     
+	    <div metal:use-macro="here/document_relateditems/macros/relatedItems">
+	        Show related items if they exist
+	    </div>
+        
+    </tal:main-macro>
+</div>
+
+</body>
+</html>

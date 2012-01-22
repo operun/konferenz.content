@@ -10,8 +10,36 @@ from konferenz.content.interfaces import ITalk
 
 class TalkView(BrowserView):
     
-    __call__ = ViewPageTemplateFile('talk.pt')
+    __call__ = ViewPageTemplateFile('templates/talk.pt')
     
 class TalkFolderView(BrowserView):
 
-    __call__ = ViewPageTemplateFile('talkfolder.pt')
+    __call__ = ViewPageTemplateFile('templates/talkfolder.pt')
+
+class TalkListingView(BrowserView):
+
+    __call__ = ViewPageTemplateFile('templates/talklisting.pt')
+
+
+    def _query(self):
+        """ get talks from current folder
+        """
+        
+        context = aq_inner(self.context)
+
+        catalog = getToolByName(context, 'portal_catalog')
+        
+        path = '/'.join(context.getPhysicalPath())
+        
+        results = catalog(portal_type='Talk', sort_on='sortable_title', path=path)
+        
+        return results
+    
+
+    def talks(self):
+        """ return talks
+        """
+        
+        talks = self._query()
+        
+        return talks

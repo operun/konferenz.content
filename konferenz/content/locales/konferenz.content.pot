@@ -1,0 +1,109 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-01-22 16:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: konferenz.content\n"
+
+#: ./content/talkfolder.py:29
+msgid ""
+msgstr ""
+
+#: ./content/talkfolder.py:28
+msgid "Body Text"
+msgstr ""
+
+#: ./content/talk.py:71
+msgid "Business Website URL"
+msgstr ""
+
+#: ./content/talk.py:29
+msgid "English"
+msgstr ""
+
+#: ./content/talk.py:28
+msgid "German"
+msgstr ""
+
+#: ./content/talk.py:96
+msgid "In which language will be the talk"
+msgstr ""
+
+#: ./content/talk.py:95
+msgid "Language"
+msgstr ""
+
+#: ./content/talk.py:72
+msgid "Please enter a Website URL."
+msgstr ""
+
+#: ./content/talk.py:80
+msgid "Please enter only the Twitter Name. Without '@'"
+msgstr ""
+
+#: ./content/talk.py:88
+msgid "Please enter the complete Xing URL"
+msgstr ""
+
+#: ./browser/templates/talklisting.pt:25
+msgid "Search Talks"
+msgstr ""
+
+#: ./profiles/default/types/Talk.xml
+msgid "Talk"
+msgstr ""
+
+#: ./profiles/default/types/Talk.xml
+#: ./profiles/default/types/TalkFolder.xml
+msgid "Talk Content Type"
+msgstr ""
+
+#: ./profiles/default/types/TalkFolder.xml
+msgid "TalkFolder"
+msgstr ""
+
+#: ./content/talk.py:79
+msgid "Twitter Name"
+msgstr ""
+
+#: ./content/talk.py:87
+msgid "Xing URL"
+msgstr ""
+
+#. Default: "There is no Description available."
+#: ./browser/templates/talklisting.pt:55
+msgid "no_talk_description"
+msgstr ""
+
+#. Default: "Show all"
+#: ./browser/templates/talklisting.pt:32
+msgid "show_all"
+msgstr ""
+
+#. Default: "Show Keynotes"
+#: ./browser/templates/talklisting.pt:33
+msgid "show_keynotes"
+msgstr ""
+
+#. Default: "Sort by Title"
+#: ./browser/templates/talklisting.pt:28
+msgid "sort_by_title"
+msgstr ""
+
+#. Default: "Talks"
+#: ./browser/templates/talklisting.pt:16
+msgid "talks"
+msgstr ""
+
