@@ -44,11 +44,11 @@
 	                        <img src="" alt="" tal:replace="structure python: path('nocall:item_object/tag')(scale='tile', css_class='talkImage')" />
 	                    </a>
 	                    
-	                    <h2 class="tileHeadline">
+	                    <div class="tileHeadline">
 	                        <a href="#" class="summary url" tal:attributes="href item_object/absolute_url" tal:content="talk/Title">
 	                            Item Title
 	                        </a>
-	                    </h2>
+	                    </div>
 	                    
 	                    <p class="tileBody" tal:condition="talk/Description">
 	                        <span class="description" tal:content="talk/Description">
@@ -64,6 +64,10 @@
 	                    	<metal:field use-macro="python:item_object.widget('text', mode='view')">
 	                    		Title
 	                    	</metal:field>
+	                    </div>
+	                    
+	                    <div class="tileSpeaker">
+	                    	<span tal:content="item_object/getName|nothing">Max Mustermann</span>, <span tal:content="item_object/getCompany|nothing">Company</span>
 	                    </div>
 	                    
 	                    <p class="category" tal:condition="item_object/getKeynote">Keynote</p>
@@ -85,7 +89,7 @@
 			    <script type="text/javascript">
 			    
 			        var options = {
-			        	valueNames: [ 'tileHeadline', 'tileBody', 'category']
+			        	valueNames: [ 'tileHeadline', 'tileBody', 'tileText', 'tileSpeaker', 'category']
 			        };
 			        
 			        var featureList = new List('talk-list', options);
