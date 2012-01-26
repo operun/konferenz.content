@@ -16,13 +16,13 @@ class TalkFolderView(BrowserView):
 
     __call__ = ViewPageTemplateFile('templates/talkfolder.pt')
 
+
 class TalkListingView(BrowserView):
 
     __call__ = ViewPageTemplateFile('templates/talklisting.pt')
 
-
     def _query(self):
-        """ get talks from current folder
+        """ get all talks
         """
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')

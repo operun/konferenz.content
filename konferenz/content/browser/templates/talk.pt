@@ -57,7 +57,7 @@
 
         <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
 
-        <h2>Der Referent/-in</h2>
+        <h2>Referent/-in</h2>
 
         <div metal:define-macro="speaker_info-field-view"
              id="parent-fieldname-text" class="stx"

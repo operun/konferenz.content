@@ -41,6 +41,7 @@
 
 #talk_details .speaker_social {
    background:#00679B; 
+   margin: 1em 0;
 }
 
 body.portaltype-talk #talk_details #category {
