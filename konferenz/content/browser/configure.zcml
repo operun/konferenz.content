@@ -18,7 +18,7 @@
       />
 
   <browser:page
-      for="..interfaces.ITalkFolder"
+      for="*"
       name="talklisting"
       class=".views.TalkListingView"
       permission="zope2.View"

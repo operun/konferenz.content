@@ -24,14 +24,10 @@ class TalkListingView(BrowserView):
     def _query(self):
         """ get talks from current folder
         """
-        
         context = aq_inner(self.context)
-
         catalog = getToolByName(context, 'portal_catalog')
         
-        path = '/'.join(context.getPhysicalPath())
-        
-        results = catalog(portal_type='Talk', sort_on='sortable_title', path=path)
+        results = catalog(portal_type='Talk', sort_on='sortable_title')
         
         return results
     
@@ -39,7 +35,6 @@ class TalkListingView(BrowserView):
     def talks(self):
         """ return talks
         """
-        
         talks = self._query()
         
         return talks
