@@ -73,6 +73,10 @@
                     <div class="expandLink">
                     	<a href=""><img src="arrowDown.gif" alt="Expand" title="Show full description" i18n:attributes="title"/></a>
                     </div>
+
+                    <div class="closeLink">
+                    	<a href=""><img src="arrowUp.gif" alt="Hide" title="Hide full description" i18n:attributes="title"/></a>
+                    </div>
                     
                     <div class="visualClear"><!-- --></div>
                     
