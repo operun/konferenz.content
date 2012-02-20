@@ -30,6 +30,10 @@ msgstr "Englisch"
 msgid "German"
 msgstr "Deutsch"
 
+#: ./browser/templates/talklisting.pt:78
+msgid "Hide full description"
+msgstr "Beschreibung ausblenden"
+
 #: ./content/talk.py:96
 msgid "In which language will be the talk"
 msgstr "In welcher Sprache wird der Vortrag gehalten"
@@ -46,13 +50,29 @@ msgstr "Bitte geben Sie eine Website URL an."
 msgid "Please enter only the Twitter Name. Without '@'"
 msgstr "Bitte geben Sie den Twitter Name ohne @ an."
 
+#: ./content/talk.py:126
+msgid "Please enter the URL to the slides."
+msgstr "Bitte geben Sie die URL der Folien an."
+
+#: ./content/talk.py:134
+msgid "Please enter the URL to the video."
+msgstr "Bitte geben Sie die URL zum Video an."
+
 #: ./content/talk.py:88
 msgid "Please enter the complete Xing URL"
 msgstr "Bitte geben Sie die URL zu Ihrem Profil bei Xing an"
 
-#: ./browser/templates/talklisting.pt:25
+#: ./browser/templates/talklisting.pt:22
 msgid "Search Talks"
 msgstr "Vorträge durchsuchen"
+
+#: ./browser/templates/talklisting.pt:74
+msgid "Show full description"
+msgstr "Zeige Beschreibung"
+
+#: ./content/talk.py:125
+msgid "Slides URL"
+msgstr "Folien URL"
 
 #: ./profiles/default/types/Talk.xml
 msgid "Talk"
@@ -71,32 +91,91 @@ msgstr "Vorträge"
 msgid "Twitter Name"
 msgstr "Twitter Name"
 
+#: ./content/talk.py:133
+msgid "Video URL"
+msgstr "Video URL"
+
 #: ./content/talk.py:87
 msgid "Xing URL"
 msgstr "Xing URL"
 
+#. Default: "Company"
+#: ./browser/templates/talk.pt:30
+msgid "company"
+msgstr "Firma"
+
+#. Default: "Download Slides"
+#: ./browser/templates/talk.pt:43
+msgid "download_slides"
+msgstr "Vortrag herunterladen"
+
+#. Default: "Name"
+#: ./browser/templates/talk.pt:26
+msgid "name"
+msgstr "Name"
+
 #. Default: "There is no Description available."
-#: ./browser/templates/talklisting.pt:55
+#: ./browser/templates/talklisting.pt:56
 msgid "no_talk_description"
 msgstr "Zu diesem Vortrag ist keine Beschreibung verfügbar."
 
 #. Default: "Show all"
-#: ./browser/templates/talklisting.pt:32
+#: ./browser/templates/talklisting.pt:29
 msgid "show_all"
 msgstr "Zeige alle"
 
 #. Default: "Show Keynotes"
-#: ./browser/templates/talklisting.pt:33
+#: ./browser/templates/talklisting.pt:30
 msgid "show_keynotes"
 msgstr "Zeige Keynotes"
 
+#. Default: "Show website"
+#: ./browser/templates/talk.pt:35
+msgid "show_website"
+msgstr "Website aufrufen"
+
+#. Default: "Slides"
+#: ./browser/templates/talk.pt:42
+msgid "slides"
+msgstr "Folien"
+
 #. Default: "Sort by Title"
-#: ./browser/templates/talklisting.pt:28
+#: ./browser/templates/talklisting.pt:25
 msgid "sort_by_title"
 msgstr "Sortiere nach Titel"
+
+#. Default: "Speaker"
+#: ./browser/templates/talk.pt:57
+msgid "speaker"
+msgstr "Referent"
+
+#. Default: "Event details"
+#: ./browser/templates/talk.pt:18
+msgid "summary_event_details"
+msgstr "Event Details"
 
 #. Default: "Talks"
 #: ./browser/templates/talklisting.pt:16
 msgid "talks"
 msgstr "Vorträge"
+
+#. Default: "Twitter"
+#: ./browser/templates/talk.pt:38
+msgid "twitter"
+msgstr "Twitter"
+
+#. Default: "Video"
+#: ./browser/templates/talk.pt:46
+msgid "video"
+msgstr "Video"
+
+#. Default: "View Video"
+#: ./browser/templates/talk.pt:47
+msgid "view_video"
+msgstr "Video anzeigen"
+
+#. Default: "Website"
+#: ./browser/templates/talk.pt:34
+msgid "website"
+msgstr "Website"
 

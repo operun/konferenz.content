@@ -119,6 +119,22 @@ schema = Schema((
 
     ),
 
+    StringField('slides',
+        searchable = True,
+        storage = AnnotationStorage(),
+        widget = StringWidget(label = _(u'Slides URL'),
+                              description = _(u"Please enter the URL to the slides."),
+                              ),
+        ),
+
+    StringField('video',
+        searchable = True,
+        storage = AnnotationStorage(),
+        widget = StringWidget(label = _(u'Video URL'),
+                              description = _(u"Please enter the URL to the video."),
+                              ),
+        ),
+
     ))
 
 TalkSchema = ATNewsItemSchema.copy() + schema.copy()

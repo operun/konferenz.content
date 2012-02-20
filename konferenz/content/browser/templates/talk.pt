@@ -3,118 +3,67 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      metal:use-macro="here/main_template/macros/master"
+      metal:use-macro="context/main_template/macros/master"
       i18n:domain="konferenz.content">
 <body>
 
-<div metal:fill-slot="main">
-    <tal:main-macro metal:define-macro="main"
-          tal:define="kssClassesView context/@@kss_field_decorator_view;
-                      getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
-                      templateId template/getId;
-                      text python:here.CookedBody(stx_level=2);
-                      len_text python:len(text.strip())">
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core"
+                        tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                    getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                                    templateId template/getId;
+                                    toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
 
-        <div tal:replace="structure provider:plone.abovecontenttitle" />
+        <div class="eventDetails talkDetails vcard">
+            <table class="vertical listing"
+                   summary="Event details" i18n:attributes="summary summary_event_details;">
 
-        <h1 class="documentFirstHeading"> 
-            <metal:field use-macro="python:here.widget('title', mode='view')">
-            Title
-            </metal:field>
-        </h1>
+                <tbody>
+                    <tr tal:condition="here/image_mini|nothing">
+                    	<td colspan="2" class="speakerImage"><img tal:replace="structure python: here.tag(scale='thumb', css_class='speakerImage')" src="" alt="" /></td>
+                    </tr>
+                    <tr tal:define="name context/getName|nothing" tal:condition="name">
+                        <th i18n:translate="name">Name</th>
+                        <td><span tal:replace="name" /></td>
+                    </tr>
+                    <tr tal:define="company context/getCompany|nothing" tal:condition="company">
+                        <th i18n:translate="company">Company</th>
+                        <td><span tal:replace="company" /></td>
+                    </tr>
+                    <tr tal:define="website context/getWebsite|nothing" tal:condition="website">
+                        <th i18n:translate="website">Website</th>
+                        <td><a href="" target="_blank" tal:attributes="href website" i18n:translate="show_website">Show website</a></td>
+                    </tr>
+                    <tr tal:define="twitter context/getTwitter|nothing" tal:condition="twitter">
+                        <th i18n:translate="twitter">Twitter</th>
+                        <td><a href="" target="_blank" tal:attributes="href python:'http://twitter.com/' + twitter" tal:content="python:'@' + twitter">@Name</a></td>
+                    </tr>
+                    <tr tal:define="slides context/getSlides|nothing" tal:condition="slides">
+                        <th i18n:translate="slides">Slides</th>
+                        <td><a href="" target="_blank" tal:attributes="href slides" i18n:translate="download_slides">Download Slides</a></td>
+                    </tr>
+                    <tr tal:define="video context/getVideo|nothing" tal:condition="video">
+                        <th i18n:translate="video">Video</th>
+                        <td><a href="" target="_blank" tal:attributes="href video" i18n:translate="view_video">View Video</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <div tal:replace="structure provider:plone.belowcontenttitle" />
+        <metal:field use-macro="python:context.widget('text', mode='view')">
+        	Body text
+        </metal:field>
         
-        <div id="talk_details">
+        <h2 i18n:translate="speaker">Speaker</h2>
 
-            <div class="speaker_details">
-                 <span class="speaker" tal:content="here/getName|nothing">Speaker Name</span> - <a class="company" tal:content="here/getCompany|nothing" tal:attributes="href here/getWebsite|nothing">Company</a>
-            </div>
-
-            <div tal:replace="structure provider:plone.abovecontentbody" />
-
-            <div class="speaker_img_desc clearfix">
-                <div class="talkImageContainer" tal:condition="here/image_mini|nothing">
-                    <img tal:replace="structure python: here.tag(scale='mini', css_class='speakerImage')" src="" alt="" />
-                </div>
-                <p class="documentDescription">
-                    <metal:field use-macro="python:here.widget('description', mode='view')">
-                    Description
-                    </metal:field>
-                </p>
-       
-        </div>
-
-        <div metal:define-macro="text-field-view"
-             id="parent-fieldname-text" class="stx"
-             tal:define="kss_class python:getKssClasses('text',
-                         templateId=templateId, macro='text-field-view');
-                         text text|here/getText|nothing"
-             tal:condition="text"
-             tal:attributes="class python: here.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
-            <div metal:define-slot="inside" tal:replace="structure text">The body</div>
-        </div>
-
-        <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
-
-        <h2>Referent/-in</h2>
-
-        <div metal:define-macro="speaker_info-field-view"
-             id="parent-fieldname-text" class="stx"
-             tal:define="kss_class python:getKssClasses('text',
-                         templateId=templateId, macro='speaker_info-field-view');
-                         text text|here/getSpeaker_info|nothing"
-             tal:condition="here/getSpeaker_info"
-             tal:attributes="class python: here.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
-            <div metal:define-slot="inside" tal:replace="structure here/getSpeaker_info">The body</div>
-        </div>
- 
-        <div class="speaker_social clearfix">
-            <div class='twitter'
-                 tal:condition="here/getTwitter">
-
-                <span>Twitter: </span>
-                <a href=""
-                   tal:attributes="href python: 'http://twitter.com/' + here.getTwitter()"
-                   tal:content="python: '@' + here.getTwitter()">
-                   Twitter Name
-                </a>
-            </div>
-            <div class='xing'
-                 tal:condition="here/getXing">
-
-                <span>Xing: </span>
-                <a href=""
-                   tal:attributes="href here/getXing"
-                   tal:content="here/getName">
-                   Xing Name
-                </a>
-            </div>
-            <div class='website'
-                 tal:condition="here/getWebsite">
-
-                <span>Web: </span>
-                <a href=""
-                   tal:attributes="href here/getWebsite"
-                   tal:content="here/getWebsite">
-                   Website Name
-                </a>
-            </div>
-
-        </div> 
- 
-    </div>
- 
-    <div tal:replace="structure provider:plone.belowcontentbody" />
-     
-    <div metal:use-macro="here/document_relateditems/macros/relatedItems">
-        Show related items if they exist
-    </div>
+        <metal:field use-macro="python:context.widget('speaker_info', mode='view')">
+        	Body text
+        </metal:field>
         
+        <span class="visualClear"><!-- --></span>
 
-    </tal:main-macro>
-</div>
+    </metal:content-core>
+</metal:content-core>
 
 </body>
 </html>
-
