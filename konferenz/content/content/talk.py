@@ -45,8 +45,11 @@ schema = Schema((
 
     TextField(
         name='speaker_info',
+        validators = ('isTidyHtmlWithCleanup',),
+        default_output_type = 'text/x-html-safe',
         widget=RichWidget(
             label='Speaker Info',
+            rows = 25,
             label_msgid='talk_label_Speaker',
             i18n_domain='talk',
         ),
